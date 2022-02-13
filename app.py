@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import messagebox
 from PIL import Image, ImageTk
 
 btn_state = True
@@ -13,14 +12,12 @@ def changeTheme():
 		theme_btn.config(bg='#303841')
 		theme_btn.config(image=img1)
 		lbl1.config(bg='#303841', text='Dark Mode')
-		#messagebox.showinfo('Done', 'Dark Mode Activated!')
 		btn_state = False
 	else:
 		root.config(background='white')
 		theme_btn.config(bg='white')
 		theme_btn.config(image=img2)
 		lbl1.config(bg='white', text='Light Mode')
-		#messagebox.showinfo('Done', 'Light Mode Activated!')
 		btn_state = True
 
 
@@ -28,8 +25,6 @@ def changeTheme():
 root = Tk()
 root.title('Theme Changer')
 root.geometry('850x650+330+200')
-#img = PhotoImage(file='logo.png')
-#root.iconphoto(False, img)
 root.resizable(0, 0)
 root.config(bg='white')
 
